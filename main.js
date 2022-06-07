@@ -46,11 +46,12 @@ function register2(){
     var userid= document.getElementById("userid").value;
     var email= document.getElementById("email").value;
     var pass= document.getElementById("pass").value;
+   
     let rpopup = document.getElementById("rpopup")
     let repopup = document.getElementById("repopup")
 
 
-    if (userid=="" || pass=="" || email =="" || condition.checked == false  ){
+    if (userid=="" || pass=="" || email =="" || condition.checked == false ){
         repopup.classList.add("re-popup");
         document.getElementById('error3').innerHTML="Please Fill All Details"
          
