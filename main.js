@@ -52,7 +52,7 @@ function register2(){
 
     if (userid=="" && pass=="" && email =="" ){
         repopup.classList.add("re-popup");
-        document.getElementById('error3').innerHTML="Please Fill All Detailes"
+        document.getElementById('error3').innerHTML="Please Fill All Details"
          
     }
     else{
