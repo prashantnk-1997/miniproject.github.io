@@ -19,21 +19,23 @@
            </div>
 
            <form id="login" class="input-group">
+               <h2>LOGIN</h2>
                <input type="text" class="input-field" placeholder="User ID" id="user" required>
                <input type="password" class="input-field" placeholder="Enter Password" id="password" required>
                <input type="checkbox" class="check-box" id="check"><span>Remeber Password</span>
-               <!-- <button type="submit" class="submit-btn" onclick="login2()" >Log in</button> -->
                <button type="button" class="submit-btn" onclick="login2()" >Log in</button>
              
            </form>
 
 
            <form id="register" class="input-group">
-            <input type="text" class="input-field" placeholder="User ID" required>
-            <input type="email" class="input-field" placeholder="Email ID" required>
-            <input type="password" class="input-field" placeholder="Enter Password" required>
-            <input type="checkbox" class="check-box"><span>i agree to terms and conditions</span>
-            <button type="submit" class="submit-btn">Register</button>
+            <h2>REGISTER</h2>
+            <input type="text" class="input-field" id="userid" placeholder="user ID" required>
+            <input type="email" class="input-field" id="email" placeholder="email ID" required>
+            <input type="password" class="input-field" id="pass" placeholder="Enter Password" required>
+            <input type="checkbox" id="condition" class="check-box"><span>i agree to terms and conditions</span>
+            <button type="button" class="submit-btn" onclick="register2()" >Register</button>
+            
 
             
         </form>
@@ -52,11 +54,31 @@
 <div class="container">
     <div id="epopup" class="epopup">
  <img src="Images/error.PNG">
- <h2>Failed</h2>
- <p>Login Failed</p>
- <button type="submit" onclick="closepopup()">OK</button>
+ <h2>Login Failed</h2>
  <p id="error2"></p> 
+ <button type="submit" onclick="closepopup()">OK</button>
+ 
 </div> 
+
+<div class="container">
+    <div id="rpopup" class="rpopup">
+ <img src="Images/success.PNG">
+ <h2>Success</h2>
+ <p>Registeration successful</p>
+ <button type="submit" onclick="closepopup()">OK</button>
+ 
+ 
+</div>
+
+<div class="container">
+    <div id="repopup" class="repopup">
+ <img src="Images/error.PNG">
+ <h2>Registration Failed</h2>
+ <p id="error3"></p>
+ <button type="submit" onclick="closepopup()">OK</button>
+ 
+ 
+</div>
 
 
 </div>
