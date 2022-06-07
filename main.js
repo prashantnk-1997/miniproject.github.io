@@ -50,7 +50,7 @@ function register2(){
     let repopup = document.getElementById("repopup")
 
 
-    if (userid=="" && pass=="" && email =="" ){
+    if (userid=="" || pass=="" || email =="" ){
         repopup.classList.add("re-popup");
         document.getElementById('error3').innerHTML="Please Fill All Details"
          
