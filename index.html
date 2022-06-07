@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+   <div class="hero"> 
+       <div class="form-box">
+           <div class="botton-box">
+               <div id="btn"></div>
+               <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+               <button type="button" class="toggle-btn" onclick="register()" >Register</button>
+           </div>
+
+           <form id="login" class="input-group">
+               <input type="text" class="input-field" placeholder="User ID" id="user" required>
+               <input type="password" class="input-field" placeholder="Enter Password" id="password" required>
+               <input type="checkbox" class="check-box" id="check"><span>Remeber Password</span>
+               <!-- <button type="submit" class="submit-btn" onclick="login2()" >Log in</button> -->
+               <button type="button" class="submit-btn" onclick="login2()" >Log in</button>
+             
+           </form>
+
+
+           <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User ID" required>
+            <input type="email" class="input-field" placeholder="Email ID" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>i agree to terms and conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+
+            
+        </form>
+    </div>
+   </div>  
+
+   <div class="container">
+       <div id="popup" class="popup">
+    <img src="Images/success.PNG">
+    <h2>Success</h2>
+    <p>Login successful</p>
+    <button type="submit" onclick="closepopup()">OK</button>
+    
+</div>
+
+<div class="container">
+    <div id="epopup" class="epopup">
+ <img src="Images/error.PNG">
+ <h2>Failed</h2>
+ <p>Login Failed</p>
+ <button type="submit" onclick="closepopup()">OK</button>
+ <p id="error2"></p> 
+</div> 
+
+
+</div>
+ 
+
+   <script src="main.js"></script>
+</body>
+</html>
