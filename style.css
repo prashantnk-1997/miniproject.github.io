@@ -4,6 +4,11 @@
     font-family: sans-serif;
 }
 
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
 .hero{
 height: 100%;
 width: 100%;
@@ -15,7 +20,8 @@ position: absolute;
 
 .form-box{
     width: 380px;
-    height: 480px;
+    height: 420px;
+    border-radius: 10px;
     position: relative;
     margin: 6% auto;
     background: #fff;
@@ -53,7 +59,7 @@ position: absolute;
 }
 
 .input-group{
-top: 180px;
+top: 120px;
 position: absolute;
 width: 280px;
 transition: .5s;
@@ -219,7 +225,114 @@ span{
 }
 
 
-#error{
+#error2, #error3 {
     color: red;
     text-align: center;
+    
 }
+
+
+
+.rpopup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    pad: 0,30px,30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+}
+
+.r-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.rpopup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.rpopup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.rpopup button{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #19e62a,#ffad06);
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
+
+}
+
+
+.repopup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    pad: 0,30px,30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+}
+
+.re-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.repopup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.repopup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.repopup button{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #e01b1b,#ffad06);
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
+
+}
+
